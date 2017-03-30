@@ -6,6 +6,9 @@ Our project will create an universal Museum app, that will enrich visitor's expe
 
 For tourists, the app will create a personalized route inside the museum according to the visitor's available time and the museum's highlights.
 
+Application prototype is planned to be run on mobile platform. As a development tool we decided to use https://creator.ionic.io , because it is made for mobile app creation, and from our perspective is the best choice to make a prototype. 
+
+As export file this tool provides ZIP archieve.  The .zip will contain the HTML/CSS/JS files of our project, separated into standard organizational format.
 
 
 
