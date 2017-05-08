@@ -28,6 +28,12 @@ angular.module('app.routes', [])
     controller: 'signupCtrl'
   })
 
+  .state('signup2', {
+    url: '/page16',
+    templateUrl: 'templates/signup2.html',
+    controller: 'signup2Ctrl'
+  })
+
   .state('welcomeToTheMuseumApp', {
     url: '/page7',
     templateUrl: 'templates/welcomeToTheMuseumApp.html',
@@ -80,6 +86,18 @@ angular.module('app.routes', [])
     url: '/page15',
     templateUrl: 'templates/bingoGame2.html',
     controller: 'bingoGame2Ctrl'
+  })
+
+  .state('page', {
+    url: '/page20',
+    templateUrl: 'templates/page.html',
+    controller: 'pageCtrl'
+  })
+
+  .state('login2', {
+    url: '/page17',
+    templateUrl: 'templates/login2.html',
+    controller: 'login2Ctrl'
   })
 
 $urlRouterProvider.otherwise('/page7')
