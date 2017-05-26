@@ -8,9 +8,7 @@
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services',])
 
 .config(function($ionicConfigProvider, $sceDelegateProvider){
-  
     $ionicConfigProvider.backButton.text('').previousTitleText(false);
-  
 
   $sceDelegateProvider.resourceUrlWhitelist([ 'self','*://www.youtube.com/**', '*://player.vimeo.com/video/**']);
 

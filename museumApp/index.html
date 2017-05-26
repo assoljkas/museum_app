@@ -16,9 +16,7 @@
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
-    
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    
+    <link href="css/ionic.app.css" rel="stylesheet">
 
     <style type="text/css">
       .platform-ios .manual-ios-statusbar-padding{
@@ -53,11 +51,8 @@
     <script src="js/controllers.js"></script>
     <script src="js/routes.js"></script>
     
-     
     <script src="js/directives.js"></script>
-     
     <script src="js/services.js"></script>
-    
 
     <!-- Only required for Tab projects w/ pages in multiple tabs 
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
@@ -82,10 +77,10 @@
       </ion-header-bar>
       <ion-content ng-controller="menuCtrl" padding="false" class="side-menu-left has-header ">
         <div id="menu-button-bar1" class="button-bar" data-componentid="button-bar1">
-          <button id="menu-button4" class="button button-positive  button-block" data-componentid="button4">Home</button>
+          <button id="menu-button4" class="button button-positive button-block" data-componentid="button4">Home</button>
         </div>
-        <button id="menu-button5" class="button button-positive  button-block" data-componentid="button5">Set museum</button>
-        <a ui-sref="welcomeToTheMuseumApp" menu-close="" id="menu-button6" class="button button-positive  button-block" data-componentid="button6">Log out</a>
+        <button id="menu-button5" class="button button-positive button-block" data-componentid="button5">Set museum</button>
+        <a ui-sref="welcomeToTheMuseumApp()" menu-close="" id="menu-button6" class="button button-positive button-block" data-componentid="button6">Log out</a>
       </ion-content>
     </ion-side-menu>
   </ion-side-menus>

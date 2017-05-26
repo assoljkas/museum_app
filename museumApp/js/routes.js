@@ -8,7 +8,6 @@ angular.module('app.routes', [])
   // Each state's controller can be found in controllers.js
   $stateProvider
     
-  
 
       .state('tabsController', {
     url: '/page1',
@@ -16,22 +15,10 @@ angular.module('app.routes', [])
     abstract:true
   })
 
-  .state('login', {
-    url: '/page5',
-    templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
-  })
-
   .state('signup', {
     url: '/page6',
     templateUrl: 'templates/signup.html',
     controller: 'signupCtrl'
-  })
-
-  .state('signup2', {
-    url: '/page16',
-    templateUrl: 'templates/signup2.html',
-    controller: 'signup2Ctrl'
   })
 
   .state('welcomeToTheMuseumApp', {
@@ -82,26 +69,49 @@ angular.module('app.routes', [])
     controller: 'bingoGameCtrl'
   })
 
-  .state('bingoGame2', {
+  .state('bingoGameSlider', {
     url: '/page15',
-    templateUrl: 'templates/bingoGame2.html',
-    controller: 'bingoGame2Ctrl'
+    templateUrl: 'templates/bingoGameSlider.html',
+    controller: 'bingoGameSliderCtrl'
   })
 
-  .state('page', {
-    url: '/page20',
-    templateUrl: 'templates/page.html',
-    controller: 'pageCtrl'
+  .state('bingoGameSliderChecked', {
+    url: '/page23',
+    templateUrl: 'templates/bingoGameSliderChecked.html',
+    controller: 'bingoGameSliderCheckedCtrl'
   })
 
-  .state('login2', {
+  .state('login', {
     url: '/page17',
-    templateUrl: 'templates/login2.html',
-    controller: 'login2Ctrl'
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
+  })
+
+  .state('barcodeScanner', {
+    url: '/page18',
+    templateUrl: 'templates/barcodeScanner.html',
+    controller: 'barcodeScannerCtrl'
+  })
+
+  .state('positiveFeedback', {
+    url: '/page21',
+    templateUrl: 'templates/positiveFeedback.html',
+    controller: 'positiveFeedbackCtrl'
+  })
+
+  .state('negativeFeedback', {
+    url: '/page19',
+    templateUrl: 'templates/negativeFeedback.html',
+    controller: 'negativeFeedbackCtrl'
+  })
+
+  .state('end', {
+    url: '/page22',
+    templateUrl: 'templates/end.html',
+    controller: 'endCtrl'
   })
 
 $urlRouterProvider.otherwise('/page7')
 
-  
 
 });
